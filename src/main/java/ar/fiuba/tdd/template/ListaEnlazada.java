@@ -2,30 +2,13 @@ package ar.fiuba.tdd.template;
 
 class ListaEnlazada {
 
-    private class Nodo {
-        Object dato;
-        Nodo siguiente;
-
-        Nodo() {
-        }
-
-        Nodo(Object objeto, Nodo sig) {
-            dato = objeto;
-            siguiente = sig;
-        }
-
-        Object getDato() {
-            return dato;
-        }
-    }
-
     private Nodo primero = new Nodo();
     private int cantElementos = 0;
 
     ListaEnlazada() {
     }
 
-    private Nodo ultimo() throws AssertionError {
+     private Nodo ultimo() throws AssertionError {
         Nodo actual;
         if (cantElementos > 0) {
             for (actual = primero; actual.siguiente.siguiente != null; actual = actual.siguiente) {
