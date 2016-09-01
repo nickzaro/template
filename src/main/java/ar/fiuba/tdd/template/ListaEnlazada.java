@@ -8,7 +8,7 @@ class ListaEnlazada {
     ListaEnlazada() {
     }
 
-     private Nodo ultimo() throws AssertionError {
+    private Nodo ultimo() throws AssertionError {
         Nodo actual;
         if (cantElementos > 0) {
             for (actual = primero; actual.siguiente.siguiente != null; actual = actual.siguiente) {
