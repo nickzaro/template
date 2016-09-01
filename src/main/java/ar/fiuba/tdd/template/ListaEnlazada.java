@@ -9,8 +9,8 @@ class ListaEnlazada {
         Nodo() {
         }
 
-        Nodo(Object o, Nodo sig) {
-            dato = o;
+        Nodo(Object objeto, Nodo sig) {
+            dato = objeto;
             siguiente = sig;
         }
 
@@ -27,16 +27,16 @@ class ListaEnlazada {
 
     private Nodo ultimo() throws AssertionError {
         Nodo actual;
-        for (actual = primero; actual.siguiente.siguiente != null; actual = actual.siguiente) ;
+        for (actual = primero; actual.siguiente.siguiente != null; actual = actual.siguiente) {}
         return actual;
     }
 
-    int tamaño() {
+    int tamanio() {
         return cantElementos;
     }
 
-    void addPrimero(Object o) {
-        primero = new Nodo(o, primero);
+    void addPrimero(Object objeto) {
+        primero = new Nodo(objeto, primero);
         cantElementos++;
     }
 

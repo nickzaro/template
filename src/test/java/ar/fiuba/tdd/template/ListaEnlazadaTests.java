@@ -9,7 +9,7 @@ public class ListaEnlazadaTests {
     @Test
     public void testVacia() {
         ListaEnlazada lista = new ListaEnlazada();
-        assertEquals(lista.tamaño(), 0);
+        assertEquals(lista.tamanio(), 0);
     }
 
     @Test

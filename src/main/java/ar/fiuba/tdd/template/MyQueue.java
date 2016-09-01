@@ -8,11 +8,11 @@ class MyQueue implements Queue {
     }
 
     public boolean isEmpty() {
-        return (lista.tamaño() == 0);
+        return (lista.tamanio() == 0);
     }
 
     public int size() {
-        return lista.tamaño();
+        return lista.tamanio();
     }
 
     public void add(Object item) {
