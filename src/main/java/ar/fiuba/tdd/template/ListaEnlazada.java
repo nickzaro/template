@@ -44,7 +44,7 @@ class ListaEnlazada {
         return ultimo().getDato();
     }
 
-    // remueve de la lista el primero que se agrego
+    // remueve de la lista el primero que se agrego 
     void removerUltimo() {
         ultimo().siguiente = null;
         cantElementos--;
