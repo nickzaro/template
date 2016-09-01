@@ -27,11 +27,11 @@ class ListaEnlazada {
 
     private Nodo ultimo() throws AssertionError {
         Nodo actual;
-        if(cantElementos>0) {
+        if (cantElementos > 0) {
             for (actual = primero; actual.siguiente.siguiente != null; actual = actual.siguiente) {
             }
             return actual;
-        }else{
+        } else {
             throw new AssertionError();
         }
     }
