@@ -9,7 +9,7 @@ public class ListaEnlazadaTests {
     @Test
     public void testVacia() {
         ListaEnlazada lista = new ListaEnlazada();
-        assertEquals(lista.tamaño(),0);
+        assertEquals(lista.tamaño(), 0);
     }
 
     @Test
@@ -17,14 +17,14 @@ public class ListaEnlazadaTests {
         ListaEnlazada lista = new ListaEnlazada();
         lista.addPrimero(1);
         lista.addPrimero(2);
-        assertEquals(lista.dataUltimo(),1);
+        assertEquals(lista.dataUltimo(), 1);
     }
 
     @Test
     public void testDataUltimo() {
         ListaEnlazada lista = new ListaEnlazada();
         lista.addPrimero(10);
-        assertEquals(lista.dataUltimo(),10);
+        assertEquals(lista.dataUltimo(), 10);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class ListaEnlazadaTests {
         lista.addPrimero(3);
         lista.removerUltimo();
         lista.removerUltimo();
-        assertEquals(lista.dataUltimo(),3);
+        assertEquals(lista.dataUltimo(), 3);
 
     }
 }

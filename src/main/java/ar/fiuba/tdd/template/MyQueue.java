@@ -3,23 +3,27 @@ package ar.fiuba.tdd.template;
 class MyQueue implements Queue {
     private ListaEnlazada lista;
 
-    MyQueue(){
-        lista =new ListaEnlazada();
+    MyQueue() {
+        lista = new ListaEnlazada();
     }
 
-    public boolean isEmpty(){
-        return (lista.tamaño()==0);
+    public boolean isEmpty() {
+        return (lista.tamaño() == 0);
     }
-    public int size(){
+
+    public int size() {
         return lista.tamaño();
     }
-    public void add(Object item){
+
+    public void add(Object item) {
         lista.addPrimero(item);
     }
-    public Object top(){
+
+    public Object top() {
         return lista.dataUltimo();
     }
-    public void remove(){
+
+    public void remove() {
         lista.removerUltimo();
     }
 }
