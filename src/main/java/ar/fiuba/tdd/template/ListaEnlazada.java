@@ -27,8 +27,13 @@ class ListaEnlazada {
 
     private Nodo ultimo() throws AssertionError {
         Nodo actual;
-        for (actual = primero; actual.siguiente.siguiente != null; actual = actual.siguiente) {}
-        return actual;
+        if(cantElementos>0) {
+            for (actual = primero; actual.siguiente.siguiente != null; actual = actual.siguiente) {
+            }
+            return actual;
+        }else{
+            throw new AssertionError();
+        }
     }
 
     int tamanio() {
@@ -44,7 +49,7 @@ class ListaEnlazada {
         return ultimo().getDato();
     }
 
-    // remueve de la lista el primero que se agrego 
+    // remueve de la lista el primero que se agrego
     void removerUltimo() {
         ultimo().siguiente = null;
         cantElementos--;
